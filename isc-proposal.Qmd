@@ -16,6 +16,10 @@ format:
       - left=1.25in
       - right=1.25in
 bibliography: references.bib
+editor:
+    markdown: 
+      wrap: sentence
+      canonical: true
 ---
 
 {{< include proposal/signatories.Qmd >}}

@@ -1,3 +1,10 @@
+---
+bibliography: references.bib
+editor:
+    markdown: 
+      wrap: sentence
+---
+
 # Signatories
 <!-- 
 This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 

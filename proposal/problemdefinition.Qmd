@@ -1,5 +1,8 @@
 ---
 bibliography: references.bib
+editor:
+    markdown: 
+      wrap: sentence
 ---
 
 # The Problem
