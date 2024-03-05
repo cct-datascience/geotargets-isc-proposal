@@ -33,3 +33,4 @@ Who has been given the opportunity to provide feedback on the proposal? This sho
 
 The idea for `geotargets` originated in a [discussion](https://github.com/ropensci/targets/discussions/1248) posted to the discussion forum for `targets` where the author and maintainer of `targets` and other "Targetopia" packages showed strong support.  The issues for `geotargets` has been busy after only a few days of it's creation with support and technical suggestions coming from several potential contributors and users of `geotargets`.
 
+<!--# It might be good to contact some of the r-spatial package developers and at least ask if they've ever used targets or what challenges they might anticipate -->
