@@ -1,10 +1,10 @@
 ---
-title: "Proposal Title"
+title: "geotargets: a working title"
 author: 
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
+  - name: Eric R. Scott
+    orcid: 0000-0002-7430-7879
     affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
+      - "University of Arizona, Communcations & Cyber Technologies Data Science"
     
 date: today
 date-format: iso
