@@ -19,4 +19,9 @@ It is important to cover:
  - [ ] Why it should be tackled
 -->
 ```
-An example in-text citation [@wickham2016].
+
+- geospatial data is big and computationaly intensive (slow)
+- targets is built for better handling big slow steps
+- geospatial data doesn't work with targets "out of the box"
+  - R objects don't actually contain data (just memory pointers)
+  - File formats often consist of multiple files---not allowed for targets

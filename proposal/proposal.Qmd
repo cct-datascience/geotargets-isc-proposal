@@ -24,3 +24,8 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 -->
+
+- Community feedback about features needed
+- Identify shortcomings in existing packages that we could contribute to to make them work better with `targets` (e.g. gadm not returning filepath, so doesn't work with `tar_file()`).
+- Package that integrates with terra and sf
+- Filetype backend independent of pacakge somewhat with `filetype` argument
