@@ -34,8 +34,13 @@ Depending on project type the detail section should include:
 -->
 
 In the `targets` package, analysis steps, or "targets", are defined with the `tar_target()` function.
-The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets where the methods for reading and writing geospatial R objects is pre-defined, yet flexible.
-For example, when a target creates a raster using the `terra` package, one would use `geotargets::tar_terra_rast()`.
+Targetopia packages extend `targets` by providing additional `tar_*()` functions with custom storage formats or that are "target factories" (targets that create targets on runtime).
+The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets with pre-defined formats that take care of the details of how these R objects are written out and read in by downstream targets.
+For example, to write a target that creates a raster using the `terra` package, one would use `geotargets::tar_terra_rast(name, command)`.
+`tar_terra_rast()` would provide a pre-defined format created with `targets::tar_format()` with functions for marshaling, writing, reading, and unmarshaling `terra` `SpatRaster` objects.
+In this case, marshaling/unmarshaling involves running `terra::wrap()` and `terra::unwrap()`, respectively, to make the R object "self-contained" rather than just containing a pointer to external data.
+This is especially necessary for parallel computing with `targets` since `SpatRaster` objects don't work outside of the R session they were created in without `wrap()`ing them first.
+
 As a minimum viable product, we hope to deliver an R package, hosted on GitHub, supporting raster and vector data objects from the `terra` and `sf` packages with custom target functions.
 Support for additional geospatial packages will be added based on feedback from the user community and through consultation with geospatial specialists.
 In initial development we will choose sensible defaults for what file types targets will be stored as (e.g. GeoTIFF for raster data), but we plan to add a `filetype` argument since there are many options for how geospatial data can be stored on disk by these packages.
