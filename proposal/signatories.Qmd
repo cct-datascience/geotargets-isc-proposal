@@ -6,6 +6,7 @@ editor:
 ---
 
 # Signatories
+
 <!-- 
 This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
 
@@ -13,24 +14,32 @@ An optional section would be for R-Core signatories where changes to R are propo
 -->
 
 ## Project team
+
 <!-- 
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
 
-Nicholas Tierney will serve as primary author and maintainer of `geotargets` during its development.  Eric Scott (University of Arizona) will be a main contributor.  Both anticipating using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
+Nicholas Tierney will serve as primary author and maintainer of `geotargets` during its development.
+Eric Scott (University of Arizona) will be a main contributor of code.
+Both anticipating using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
 
 ## Contributors
+
 <!-- 
 Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
 -->
 
-We already have contributions in the form of detailed reproducible examples in GitHub issues.  We hope that these people continue to contribute in the form of pull requests and further input as users of `geotargets`.  <!--# maybe list here the people who have commented on issues by name? I feel like there is an impressive volume of activity given that the repo has only existed for a few days --eric -->
+We already have contributions in the form of detailed reproducible examples in GitHub issues.
+In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing with reading and writing shapefiles, and choosing alternative filetypes for targets.
+Anthony North at Queensland Fire and Emergency Services has contributed code for using `geoarrow` as a backend for reading and writing targets.
+Dewey Dunnington at Voltron Data has also made suggestions on using `geoarrow`.
 
 ## Consulted
+
 <!-- 
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-The idea for `geotargets` originated in a [discussion](https://github.com/ropensci/targets/discussions/1248) posted to the discussion forum for `targets` where the author and maintainer of `targets` and other "Targetopia" packages showed strong support.  The issues for `geotargets` has been busy after only a few days of it's creation with support and technical suggestions coming from several potential contributors and users of `geotargets`.
-
-<!--# It might be good to contact some of the r-spatial package developers and at least ask if they've ever used targets or what challenges they might anticipate -->
+The idea for `geotargets` originated in a [discussion](https://github.com/ropensci/targets/discussions/1248) posted to the discussion forum for `targets` where the author and maintainer of `targets` and other "Targetopia" packages showed strong support.
+Community contributions to `geotargets` via issues and comments on issues have been numerous despite the repository only having existed since the beginning of March 2024.
+Additionally, we plan to consult with geospatial experts throughout development to be sure we are addressing the most pressing issues and addressing them in ways that will fit with common geospatial analysis workflows in R.
