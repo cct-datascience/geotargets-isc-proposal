@@ -4,17 +4,25 @@ editor:
     markdown: 
       wrap: sentence
 ---
+
 # The proposal
+
 <!--
 This is where the proposal should be outlined. 
 -->
 
 ## Overview
+
 <!--
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
+Our goal is to create a package that makes using `targets` for geospatial analysis in R as seamless as possible.
+To that end, `geotargets` will provide custom functions for defining geospatial targets that take care of translating and saving R objects for the user.
+In addition, we hope to create vignettes demonstrating how to use various geospatial R packages with `targets` and to identify ways we can contribute to existing R packages to make them easier to use with `targets` and `geotargets`.
+
 ## Detail
+
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
 
@@ -25,7 +33,10 @@ Depending on project type the detail section should include:
  - [ ] Assumptions
 -->
 
-- Community feedback about features needed
-- Identify shortcomings in existing packages that we could contribute to to make them work better with `targets` (e.g. gadm not returning filepath, so doesn't work with `tar_file()`).
-- Package that integrates with terra and sf
-- Filetype backend independent of pacakge somewhat with `filetype` argument
+In the `targets` package, analysis steps, or "targets", are defined with the `tar_target()` function.
+The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets where the methods for reading and writing geospatial R objects is pre-defined, yet flexible.
+For example, when a target creates a raster using the `terra` package, one would use `geotargets::tar_terra_rast()`.
+As a minimum viable product, we hope to deliver an R package, hosted on GitHub, supporting raster and vector data objects from the `terra` and `sf` packages with custom target functions.
+Support for additional geospatial packages will be added based on feedback from the user community and through consultation with geospatial specialists.
+In initial development we will choose sensible defaults for what file types targets will be stored as (e.g. GeoTIFF for raster data), but we plan to add a `filetype` argument since there are many options for how geospatial data can be stored on disk by these packages.
+This will offer flexibility in light of tradeoffs between file size, read/write speed, and dependency requirements similar to the existing options for how objects are stored by the `targets` package (i.e. default '.rds' with options for faster/smaller file types).
