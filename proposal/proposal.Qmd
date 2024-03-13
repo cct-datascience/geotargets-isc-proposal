@@ -43,5 +43,5 @@ This is especially necessary for parallel computing with `targets` since `SpatRa
 
 As a minimum viable product, we hope to deliver an R package, hosted on GitHub, supporting raster and vector data objects from the `terra` and `sf` packages with custom target functions.
 Support for additional geospatial packages will be added based on feedback from the user community and through consultation with geospatial specialists.
-In initial development we will choose sensible defaults for what file types targets will be stored as (e.g. GeoTIFF for raster data), but we plan to add a `filetype` argument since there are many options for how geospatial data can be stored on disk by these packages.
-This will offer flexibility in light of tradeoffs between file size, read/write speed, and dependency requirements similar to the existing options for how objects are stored by the `targets` package (i.e. default '.rds' with options for faster/smaller file types).
+In initial development we will choose sensible defaults for what file types targets will be stored as (e.g. GeoTIFF for raster data), but we plan to develop a `filetype` argument for each `tar_*` function since there are many options for how geospatial data can be stored on disk by these packages.
+This will offer flexibility in light of trade-offs between file size, read/write speed, and dependency requirements similar to the existing options for how objects are stored by the `targets` package (i.e. default '.rds' with options for faster/smaller file types).
