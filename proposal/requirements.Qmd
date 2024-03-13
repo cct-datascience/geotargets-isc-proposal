@@ -11,31 +11,37 @@ An idea of what is required to make the project actually happen
 -->
 
 ## People
-<!--
-Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
--->
+
+Nicholas Tierney and Eric Scott will do the coding work on this project.  Both have experience developing R packages and working with `targets` as well as some experience with geospatial analysis in R.  Additionally we plan to consult with geospatial experts who are more familiar with the "rough edges" related to doing geospatial analysis in R and with the `targets` package.
 
 ## Processes
 <!-- 
 What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
 -->
 
-## Tools & Tech
-<!--
-What is going to be needed to deliver this project? 
-
-Will cloud computing be used - if yes are there are necessary components that will be deciding factors between providers?
-
-Are there tools or tech that don't exist that will be produced to facilitate the project?
--->
+We will adopt a code of conduct and contribution guideline based on guidelines used by rOpenSci.  Communication regarding development will happen primarily via GitHub issues, with additional communication not regarding code happening via the rOpenSci Slack where both Eric and Nicholas are members.  We may hold occasional video meetings as well.
 
 ## Funding
-<!-- 
-[TO DO] THE GUIDANCE IS PRETTY UNCLEAR, ESP IN LIGHT OF GABOR'S PROPOSAL VS AWARD SIZE
 
--->
+We request funding to pay for the time of the personnel working on this project.
+
+- Eric Scott, xx hours totaling $xxxx
+- Nicholas Tierney, xx hours totaling $xxxx
+
+Additionally, we will consult with geospatial experts and would like to be able to pay them for their time:
+
+- Consulting, xx hours totaling $xxx
+
+For a total of: $xxxx
+
+**Funding timeline**
+
+- After milestone 2 (date): $xxxx
+- After technical delivery (date): $xxxx
 
 ## Summary
 <!--
 A summary of the requirements that contextualises the costs
 -->
+
+These costs are a one-time investment to pay for initial development of the `geotargets` package.
