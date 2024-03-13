@@ -18,11 +18,8 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-We already have created a [repository](https://github.com/njtierney/geotargets) on GitHub with a bare-bones package with GitHub actions being used to run package checks.
-In the start-up phase, we will focus on making design decisions about what the package will offer.
-For example, will we provide alternatives to `targets::tar_target()` the way the `tarchetypes` package does (e.g. `tarchetypes::tar_url()`), or will we simply provide `format_*` objects to use in the `format` argument of `tar_target()`?
-What r-spatial packages will we support and what are their relative priorities?
-What file types will we support as storage formats for targets?
+We have already created a [repository](https://github.com/njtierney/geotargets) on GitHub that uses GitHub actions to run package checks.
+In the start-up phase, we will focus on making design decisions about what the package will offer and research and discuss what r-spatial packages and object types will we support.
 Answering these questions will lay the groundwork for efficient collaborative development of the package.
 
 ## Technical delivery
@@ -37,17 +34,18 @@ Our goal is to deliver a package that allows users to use the `targets` package 
 
 Milestone 1: <date>
 
--   Basic package with functionality for `terra` raster and vector objects
+-   Basic package with functionality for `terra` `SpatRaster` and `SpatVector` objects
 -   Well documented functions with high test coverage ensuring a solid start to the project
 -   Creation of a `pkgdown` website for the package hosted on GitHub pages
 
 Milestone 2: <date>
 
--   Add support for objects from a second r-spatial package -Benchmarking of various file type options for storing targets including file size and read and write speed
+-   Add support for objects from a second r-spatial package such as `sf`
+-   Benchmarking of various file type options for storing targets including file size and read and write speed. Our findings will be published as an article on the `geotargets` website.
 
 Milestone 3: <date>
 
--   Add support for objects from a third r-spatial package
+-   Add support for objects from a third r-spatial package.
 
 ## Other aspects
 
@@ -62,4 +60,4 @@ Covering non-technical activities like on-going publicity, paper preparation, di
 -->
 
 Throughout the project we will seek feedback from users on social media (Mastodon and Twitter) and on the `targets` discussion forum.
-Each milestone will coincide roughly with a release on GitHub and a short blog post on https://www.njtierney.com/
+Each milestone will coincide roughly with a release on GitHub and a short blog post on <https://www.njtierney.com/>.
