@@ -32,6 +32,6 @@ A second obstacle is that often geospatial data is written in multiple files—f
 This limits compatibility with `targets` because the intermediate objects stored in a `targets` pipeline are required to be single files with no file extension.
 
 Both of these challenges (and others) have been solved in bespoke ways for individual projects, but to date these solutions have not been formalized and distributed as an R package.
-Other packages exist as part of a "[targetopia](https://wlandau.github.io/targetopia/)" that extend `targets` to work for specialized needs.
+Other packages exist as part of a "[targetopia](https://wlandau.github.io/targetopia/)" that extend `targets` to work for specialized needs. For example [stantargets](https://docs.ropensci.org/stantargets/) for using targets with [stan](https://mc-stan.org/) models.
 We hope that `geotargets` can join the "targetopia" and simplify geospatial data analysis with `targets`.
 We believe this will unlock a powerful workflow management tool for a large group of R users that have previously been unable (or unwilling) to use it because of these challenges.
