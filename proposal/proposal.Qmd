@@ -35,7 +35,7 @@ Depending on project type the detail section should include:
 -->
 
 In the `targets` package, analysis steps, or "targets", are defined with the `tar_target()` function.
-Targetopia packages provide additional `tar_*()` functions that extend `targets` primarily in two ways: by providing custom storage formats or by acting as "target factories" (targets that create multiple targets on runtime).
+Targetopia packages provide additional `tar_*()` functions that extend `targets` by providing target archetypes for specialized workflows.
 The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets with pre-defined formats that take care of the details of how these R objects are written out and read in by downstream targets.
 For example, to write a target that creates a raster using the `terra` package, one would use `geotargets::tar_terra_rast(name, command)`.
 `tar_terra_rast()` would provide a pre-defined format created with `targets::tar_format()` with functions for marshaling, writing, reading, and unmarshaling `terra` `SpatRaster` objects.
