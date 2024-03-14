@@ -43,7 +43,7 @@ Milestone 2: September 30
 -   Add support for objects from a second r-spatial package such as `sf`
 -   Benchmarking of various file type options for storing targets including file size and read and write speed. Our findings will be published as an article on the `geotargets` website.
 
-Milestone 3: <date>
+Milestone 3: November 30
 
 -   Add support for objects from a third r-spatial package.
 
