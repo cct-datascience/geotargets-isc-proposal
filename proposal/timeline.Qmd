@@ -8,6 +8,7 @@ editor:
 # Project plan
 
 ## Start-up phase
+
 <!--
 Covering the planning phase, this section should provide a relatively detailed plan of how work will start on the project. This section is important because projects need to get up and running quickly.
 
@@ -17,15 +18,37 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
+We have already created a [repository](https://github.com/njtierney/geotargets) on GitHub that uses GitHub actions to run package checks.
+In the start-up phase, we will focus on making design decisions about what the package will offer and research and discuss what r-spatial packages and object types will we support.
+Answering these questions will lay the groundwork for efficient collaborative development of the package.
 
 ## Technical delivery
+
 <!--
 Covering the actual delivery of the project this section should provide at least a high-level the implementation. 
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
+Our goal is to deliver a package that allows users to use the `targets` package with various r-spatial packages (`terra`, `sf`, `stars`, etc.) with as little friction as possible.
+
+Milestone 1: July 31
+
+-   Basic package with functionality for `terra` `SpatRaster` and `SpatVector` objects
+-   Well documented functions with high test coverage ensuring a solid start to the project
+-   Creation of a `pkgdown` website for the package hosted on GitHub pages
+
+Milestone 2: September 30
+
+-   Add support for objects from a second r-spatial package such as `sf`
+-   Benchmarking of various file type options for storing targets including file size and read and write speed. Our findings will be published as an article on the `geotargets` website.
+
+Milestone 3: November 30
+
+-   Add support for objects from a third r-spatial package.
+
 ## Other aspects
+
 <!--
 Covering non-technical activities like on-going publicity, paper preparation, discussion groups etc. that might be required to facilitate successful delivery of the project.
 
@@ -35,3 +58,7 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] UseR!
  - [ ] ISC meetings
 -->
+
+Throughout the project we will seek feedback from users on social media (Mastodon and Twitter) and on the `targets` discussion forum.
+Each milestone will coincide roughly with a release on GitHub and a short blog post on <https://www.njtierney.com/>.
+We intend to submit the package to [rOpenSci for software review](https://github.com/ropensci/software-review), and subsequently submit for publication to the [Journal of Open Source Software](https://joss.theoj.org/).
