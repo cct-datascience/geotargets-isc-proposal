@@ -61,3 +61,4 @@ Covering non-technical activities like on-going publicity, paper preparation, di
 
 Throughout the project we will seek feedback from users on social media (Mastodon and Twitter) and on the `targets` discussion forum.
 Each milestone will coincide roughly with a release on GitHub and a short blog post on <https://www.njtierney.com/>.
+We intend to submit the package to [rOpenSci for software review](https://github.com/ropensci/software-review), and subsequently submit for publication to the [Journal of Open Source Software](https://joss.theoj.org/).
