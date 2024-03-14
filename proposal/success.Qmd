@@ -25,6 +25,9 @@ How will we know when success is achieved, what markers can we use along the way
 -->
 We will use github issues to identify key tasks that require completing. For example, identifying target components for rasters and vectors for the terra package were outlined in https://github.com/njtierney/geotargets/issues/12. The pull requests that resolved this were linked in the issue.
 
+We will ensure the package is has high test coverage of over 80%. This will make the package easier to maintain, as any breaking changes will be identified early. 
+We will use github actions to ensure `geotargets` can be installed on windows, macOS, and linux. High test coverage and github actions together will indicate to users this package is reliable and well maintained, which will hopefully improve trust and user takeup.
+
 Another way we will measure success is by community uptake - if the project is used by the community then we will know that the project is successful, because it means it is solving a real need for the people using it. We can measure this success via a few metrics, github stars, downloads from CRAN, and citations to the software.
 
 We will regularly engage with the community to see that we are meeting their needs in geospatial 
