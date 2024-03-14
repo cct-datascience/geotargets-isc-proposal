@@ -32,7 +32,7 @@ Including target dates is really important as you need to be committed and the I
 
 Our goal is to deliver a package that allows users to use the `targets` package with various r-spatial packages (`terra`, `sf`, `stars`, etc.) with as little friction as possible.
 
-Milestone 1: <date>
+Milestone 1: July 31
 
 -   Basic package with functionality for `terra` `SpatRaster` and `SpatVector` objects
 -   Well documented functions with high test coverage ensuring a solid start to the project
