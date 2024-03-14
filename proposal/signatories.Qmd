@@ -34,6 +34,7 @@ In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing 
 Anthony North at Queensland Fire and Emergency Services has contributed code for using `geoarrow` as a backend for reading and writing targets.
 Dewey Dunnington at Voltron Data has also made suggestions on using `geoarrow`.
 Michael Sumner and Ben Raymond at Integrated Digital East Antarctica program, Australian Antarctic Division, have agreed to provide support and guidance in handling and managing geospatial data formats, in particular navigating GDAL.
+
 ## Consulted
 
 <!-- 
