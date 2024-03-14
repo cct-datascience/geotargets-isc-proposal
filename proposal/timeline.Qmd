@@ -46,6 +46,7 @@ Milestone 2: September 30
 Milestone 3: November 30
 
 -   Add support for objects from a third r-spatial package.
+-   Prepare for submission to rOpenSci
 
 ## Other aspects
 
