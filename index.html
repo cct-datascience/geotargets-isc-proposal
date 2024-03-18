@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Eric R. Scott">
-<meta name="dcterms.date" content="2024-03-14">
+<meta name="dcterms.date" content="2024-03-18">
 
 <title>geotargets: a working title</title>
 <style>
@@ -3088,7 +3088,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024-03-14</p>
+      <p class="date">2024-03-18</p>
     </div>
   </div>
   
@@ -3272,23 +3272,30 @@ A summary of the requirements that contextualises the costs
 <!-- 
 Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery 
 -->
+<p>In order to understand and evaluate the success of the {geotargets} project, it is worthwhile visiting our definitions of done and success, as well as exploring future work, and potential risks to the project.</p>
 <section id="definition-of-done" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-done">Definition of done</h2>
 <!-- 
 What does success look like? 
 -->
+<p>Success in the geotargets project looks like supporting fundamental geospatial raster and vector operations for the {terra} and {sf} packages. We will include examples of using these targets workflows for {terra} and {sf} in the form of vignettes, as well as link to existing repositories that will</p>
 </section>
 <section id="measuring-success" class="level2">
 <h2 class="anchored" data-anchor-id="measuring-success">Measuring success</h2>
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
+<p>We will use github issues to identify key tasks that require completing. For example, identifying target components for rasters and vectors for the terra package were outlined in https://github.com/njtierney/geotargets/issues/12. The pull requests that resolved this were linked in the issue.</p>
+<p>We will ensure the package is has high test coverage of over 80%. This will make the package easier to maintain, as any breaking changes will be identified early. We will use github actions to ensure <code>geotargets</code> can be installed on windows, macOS, and linux. High test coverage and github actions together will indicate to users this package is reliable and well maintained, which will hopefully improve trust and user takeup.</p>
+<p>Another way we will measure success is by community uptake - if the project is used by the community then we will know that the project is successful, because it means it is solving a real need for the people using it. We can measure this success via a few metrics, github stars, downloads from CRAN, and citations to the software.</p>
+<p>We will regularly engage with the community to see that we are meeting their needs in geospatial</p>
 </section>
 <section id="future-work" class="level2">
 <h2 class="anchored" data-anchor-id="future-work">Future work</h2>
 <!-- 
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
+<p>This work could be extended in the future by developing new geospatial target factories for other spatial formats. For example, there are formats such as geoarrow, vapour, and geoparquet.</p>
 </section>
 <section id="key-risks" class="level2">
 <h2 class="anchored" data-anchor-id="key-risks">Key risks</h2>
@@ -3301,6 +3308,9 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 
 -->
+<p>Some of the risks in this project are potential changes in geospatial technology. Although it is unlikely that projects such as GDAL will produce breaking changes, if they do, then we might need to make substantial changes.</p>
+<p>We have decided to provide support for currently maintained geospatial projects. For example, we do not provide support for the raster R package (https://github.com/rspatial/raster), because it has been superceded by the terra R package. Many people still use the raster package, but we have decided to avoid the risk of supporting raster as it is no longer actively maintained.</p>
+<p>Another potential risk is key team members having other commitments arise that mean they cannot work on the project anymore. We can protect against these by having more than one key team member who can contribute to the work. This will reduce our “bus factor”. We will also adopt professional standards for managing our project on git and github. This means that we will regularly push our work onto github, so the work will not be at risk of not being available by way of only being on someone’s specific machine.</p>
 <div class="refs">
 
 </div>
