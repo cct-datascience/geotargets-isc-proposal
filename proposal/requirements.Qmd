@@ -33,8 +33,8 @@ We may hold occasional video meetings as well.
 
 We request funding to pay for the time of the personnel working on this project.
 
--   Eric Scott, xx hours totaling \$xxxx
--   Nicholas Tierney, xx hours totaling \$xxxx
+-   Eric Scott, 108 hours totaling \$5,045
+-   Nicholas Tierney, 108 hours totaling \$xxxx
 
 Additionally, we will consult with geospatial experts and would like to be able to pay them for their time:
 
@@ -44,8 +44,8 @@ For a total of: \$xxxx
 
 **Funding timeline**
 
--   After milestone 2 (date): \$xxxx
--   After technical delivery (date): \$xxxx
+-   After milestone 2 (date): \$xxxx <!--# half -->
+-   After technical delivery (date): \$xxxx <!--# the rest -->
 
 ## Summary
 
