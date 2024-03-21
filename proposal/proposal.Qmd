@@ -24,6 +24,7 @@ Where appropriate, we will identify contributions to existing R packages to make
 
 ## Detail
 
+```{=html}
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
 
@@ -33,7 +34,7 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 -->
-
+```
 In the `targets` package, analysis steps, or "targets", are defined with the `tar_target()` function.
 Targetopia packages provide additional `tar_*()` functions that extend `targets` by providing target archetypes for specialized workflows.
 The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets with pre-defined formats that take care of the details of how these R objects are written out and read in by downstream targets.
@@ -41,6 +42,7 @@ For example, to write a target that creates a raster using the `terra` package, 
 `tar_terra_rast()` would provide a pre-defined format created with `targets::tar_format()` with functions for marshaling, writing, reading, and unmarshaling `terra` `SpatRaster` objects.
 In this case, marshaling/unmarshaling involves running `terra::wrap()` and `terra::unwrap()`, respectively, to make the R object "self-contained" rather than just containing a C++ pointer to the data.
 This is especially necessary for parallel computing with `targets` since `SpatRaster` objects don't work outside of the R session they were created in without `wrap()`ing them first.
+Reading and writing the target, in this case, would be specified to happen via `terra::rast()` and `terra::writeRaster()`, respectively.
 
 As a minimum viable product, we hope to deliver an R package, hosted on GitHub, supporting raster and vector data objects from the `terra` and `sf` packages with custom target functions.
 Support for additional geospatial packages will be added based on feedback from the user community and through consultation with geospatial specialists.
