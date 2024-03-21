@@ -24,7 +24,6 @@ Where appropriate, we will identify contributions to existing R packages to make
 
 ## Detail
 
-```{=html}
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
 
@@ -34,7 +33,7 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 -->
-```
+
 In the `targets` package, analysis steps, or "targets", are defined with the `tar_target()` function.
 Targetopia packages provide additional `tar_*()` functions that extend `targets` by providing target archetypes for specialized workflows.
 The main contribution of `geotargets` will be a series of alternative `tar_*()` functions that create targets with pre-defined formats that take care of the details of how these R objects are written out and read in by downstream targets.
