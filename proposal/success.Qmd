@@ -19,8 +19,8 @@ In order to understand and evaluate the success of the `geotargets` project, it 
 What does success look like? 
 -->
 
-Success in the geotargets project looks like supporting fundamental geospatial raster and vector operations for the `terra` and `sf` packages.
-We will include examples of using these targets workflows for `terra` and `sf` in the form of vignettes, as well as link to existing repositories that will
+Success in the `geotargets` project looks like supporting fundamental geospatial raster and vector operations for the `terra` and `sf` packages.
+We will include examples of using these targets workflows for `terra` and `sf` in the form of vignettes, as well as link to existing repositories that demonstrate varying degrees of complexity in usage of `geotargets`. See for example [demo-geotargets](https://github.com/njtierney/demo-geospatial-targets), and [map-ir-pipeline](https://github.com/idem-lab/map-ir-pipeline).
 
 ## Measuring success
 
@@ -32,13 +32,13 @@ We will use github issues to identify key tasks that require completing.
 For example, identifying target components for rasters and vectors for the `terra` package were outlined in <https://github.com/njtierney/geotargets/issues/12>.
 The pull requests that resolved this were linked in the issue.
 
-We will ensure the package is has high test coverage of over 80%.
+We will ensure the package is has high test coverage of over 80%. Currently test coverage is 97%.
 This will make the package easier to maintain, as any breaking changes will be identified early.
 We will use github actions to ensure `geotargets` can be installed on windows, macOS, and linux.
 High test coverage and github actions together will indicate to users this package is reliable and well maintained, which will hopefully improve trust and user takeup.
 
-Another way we will measure success is by community uptake—if the project is used by the community then we will know that the project is successful, because it means it is solving a real need for the people using it.
-We can measure this success via a few metrics such as GitHub stars, downloads from CRAN, and citations to the software.
+Another way we will measure success is by community uptake. If the project is used by the community then we will know that the project is successful, because it means it is solving a real need for the people using it.
+We can measure this success via a few metrics such as GitHub stars, downloads from CRAN, and citations to the software. Note that currently the project was created on 2024-03-03, and as of 2024-03-22 it has 35 stars.
 
 We will regularly engage with the community to see that we are meeting their needs in geospatial workflow management.
 
@@ -49,7 +49,7 @@ How could this be extended / developed in the future by yourself and/or the comm
 -->
 
 This work could be extended in the future by developing new geospatial target factories for other spatial formats.
-For example, there are formats such as geoarrow, vapour, and geoparquet.
+For example, formats such as geoarrow, vapour, and geoparquet.
 
 ## Key risks
 
@@ -64,9 +64,9 @@ What sort of things could come up that can delay or break the project?
 -->
 
 Some of the risks in this project are potential changes in geospatial technology.
-Although it is unlikely that projects such as GDAL will produce breaking changes, if they do, then we might need to make substantial changes.
+Although it is unlikely that projects such as GDAL will produce breaking changes, if they do, we will need to make substantial changes.
 
-We have decided to provide support only for currently maintained geospatial projects.
+We have decided to only support currently maintained geospatial projects.
 For example, many people still use the `raster` package, but we have decided to avoid the risk of supporting `raster` as it is no longer actively maintained and has been superseded by `terra`.
 
 We may encounter challenges that cannot be solved directly by `geotargets` and require changes to be made in dependencies such as `targets` or the geospatial packages we intend to support.
