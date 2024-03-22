@@ -32,15 +32,15 @@ We will use github issues to identify key tasks that require completing.
 For example, identifying target components for rasters and vectors for the `terra` package were outlined in <https://github.com/njtierney/geotargets/issues/12>.
 The pull requests that resolved this were linked in the issue.
 
-We will ensure the package is has high test coverage of over 80%. Currently test coverage is 97%.
+We will ensure the package is has high test coverage of over 80% (currently test coverage is 97%).
 This will make the package easier to maintain, as any breaking changes will be identified early.
 We will use github actions to ensure `geotargets` can be installed on windows, macOS, and linux.
 High test coverage and github actions together will indicate to users this package is reliable and well maintained, which will hopefully improve trust and user takeup.
 
 Another way we will measure success is by community uptake. If the project is used by the community then we will know that the project is successful, because it means it is solving a real need for the people using it.
-We can measure this success via a few metrics such as GitHub stars, downloads from CRAN, and citations to the software. Note that currently the project was created on 2024-03-03, and as of 2024-03-22 it has 35 stars.
+We can measure this success via a few metrics such as GitHub stars, downloads from CRAN, and citations to the software. Currently the project was created on 2024-03-03, and as of 2024-03-22 it has 35 stars. This indicates that the project is already gathering interest from the community.
 
-We will regularly engage with the community to see that we are meeting their needs in geospatial workflow management.
+We will regularly engage with the community to see that we are meeting their needs in geospatial workflow management. For example, posting on mastodon, responding to issues and discussions on github, and delivering talks on using geotargets to local R communities.
 
 ## Future work
 
