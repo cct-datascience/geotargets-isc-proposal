@@ -18,7 +18,7 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-We have already created a [repository](https://github.com/njtierney/geotargets) on GitHub that uses GitHub actions to run package checks.
+We have already created a [geotargets package on GitHub](https://github.com/njtierney/geotargets) that uses GitHub actions to run package checks.
 In the start-up phase, we will focus on making design decisions about what the package will offer and research and discuss what r-spatial packages and object types will we support.
 Answering these questions will lay the groundwork for efficient collaborative development of the package.
 
@@ -41,12 +41,13 @@ Milestone 1: July 31
 Milestone 2: September 30
 
 -   Add support for objects from a second r-spatial package such as `sf`
--   Benchmarking of various file type options for storing targets including file size and read and write speed. Our findings will be published as an article on the `geotargets` website.
+-   Benchmarking of various file type options for storing targets including file size and read and write speed. Our findings will be published as a package vignette and an article on the `geotargets` website.
 
 Milestone 3: November 30
 
 -   Add support for objects from a third r-spatial package.
--   Prepare for submission to rOpenSci
+-   Prepare for submission to rOpenSci software review
+-   Prepare short paper for submission to Journal of Open Source Software (following rOpenSci software review)
 
 ## Other aspects
 

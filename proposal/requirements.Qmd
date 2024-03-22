@@ -7,11 +7,10 @@ editor:
 
 # Requirements
 
-```{=html}
 <!-- 
 An idea of what is required to make the project actually happen
 -->
-```
+
 ## People
 
 Nicholas Tierney and Eric Scott will take the lead in developing code for this project.
@@ -20,11 +19,10 @@ Additionally we plan to consult with geospatial experts who are more familiar wi
 
 ## Processes
 
-```{=html}
 <!-- 
 What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
 -->
-```
+
 We will adopt a code of conduct and contribution guideline based on guidelines used by rOpenSci.
 Communication regarding development will happen primarily via GitHub issues, with additional communication not regarding code happening via the rOpenSci Slack where both Eric and Nicholas are members.
 We may hold occasional video meetings as well.
@@ -33,25 +31,25 @@ We may hold occasional video meetings as well.
 
 We request funding to pay for the time of the personnel working on this project.
 
--   Eric Scott, 108 hours totaling \$5,045
--   Nicholas Tierney, 108 hours totaling \$xxxx
+-   Eric Scott, 108 hours totaling \$5,184
+-   Nicholas Tierney, 108 hours totaling \$7,128
 
 Additionally, we will consult with geospatial experts and would like to be able to pay them for their time:
 
--   Consulting, xx hours totaling \$xxx
+-   Consulting, 36 hours totaling \$3600
 
-For a total of: \$xxxx
+For a total of: \$15,912
 
 **Funding timeline**
 
--   After milestone 2 (date): \$xxxx <!--# half -->
--   After technical delivery (date): \$xxxx <!--# the rest -->
+-   After milestone 1 (July 31): \$5,304 <!--# third? -->
+-   After milestone 2 (September 30): \$5,304 <!--# third? -->
+-   After technical delivery (November 30): \$5,304 <!--# the rest -->
 
 ## Summary
 
-```{=html}
 <!--
 A summary of the requirements that contextualises the costs
 -->
-```
-These costs are a one-time investment to pay for initial development of the `geotargets` package.
+
+These costs are a one-time investment to pay for initial development of the `geotargets` package totaling \$15,912.
