@@ -32,18 +32,19 @@ We may hold occasional video meetings as well.
 We request funding to pay for the time of the personnel working on this project.
 
 -   Eric Scott, 108 hours totaling \$5,045
--   Nicholas Tierney, 108 hours totaling \$xxxx
+-   Nicholas Tierney, 108 hours totaling \$7,128
 
 Additionally, we will consult with geospatial experts and would like to be able to pay them for their time:
 
--   Consulting, xx hours totaling \$xxx
+-   Consulting, 36 hours totaling \$3600
 
-For a total of: \$xxxx
+For a total of: \$15773
 
 **Funding timeline**
 
--   After milestone 2 (date): \$xxxx <!--# half -->
--   After technical delivery (date): \$xxxx <!--# the rest -->
+-   After milestone 1 (July 31): \$5257.67 <!--# third? -->
+-   After milestone 2 (September 30): \$5257.67 <!--# third? -->
+-   After technical delivery (November 30): \$5257.67 <!--# the rest -->
 
 ## Summary
 
@@ -51,4 +52,4 @@ For a total of: \$xxxx
 A summary of the requirements that contextualises the costs
 -->
 
-These costs are a one-time investment to pay for initial development of the `geotargets` package totaling \$XXXX.
+These costs are a one-time investment to pay for initial development of the `geotargets` package totaling \$15773.
