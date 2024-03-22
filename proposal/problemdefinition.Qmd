@@ -31,7 +31,7 @@ When one of these `terra` objects is saved (e.g. as a .rds) and read back into R
 To make these R objects portable and suitable for use with `targets` they need to be "marshaled" and "unmarshaled" requiring more complex code, for a custom format.
 
 A second obstacle is that often geospatial data is written in multiple files.
-For example, [shapefiles](#0) are actually a collection of up to 12 files with different extensions.
+For example, [shapefiles](https://en.wikipedia.org/wiki/Shapefile) are actually a collection of up to 12 files with different extensions.
 This limits compatibility with `targets` because the intermediate objects stored in a `targets` pipeline are required to be single files with no file extension.
 
 Both of these challenges (and others) have been solved in bespoke ways for individual projects, but to date these solutions have not been formalized and distributed as an R package.
