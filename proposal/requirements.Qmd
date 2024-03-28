@@ -15,6 +15,7 @@ An idea of what is required to make the project actually happen
 
 Nicholas Tierney and Eric Scott will take the lead in developing code for this project.
 Both have experience developing R packages and working with `targets` as well as some experience with geospatial analysis in R.
+Both Nicholas and Eric are familiar with the rOpenSci package review process and have published R packages on CRAN.
 Additionally we plan to consult with geospatial experts who are more familiar with the "rough edges" related to doing geospatial analysis in R and with the `targets` package.
 
 ## Processes
@@ -34,7 +35,8 @@ We request funding to pay for the time of the personnel working on this project.
 -   Eric Scott, 108 hours totaling \$5,184
 -   Nicholas Tierney, 108 hours totaling \$7,128
 
-Additionally, we plan to arrange several meetings with geospatial experts to discuss less well understood aspects of geospatial software, such as interfaces to GDAL, and components like the "vsizip" API. We would like to pay the experts for their time, and also offer to pay them to assist us in implementing certain features. 
+Additionally, we plan to arrange several meetings with geospatial experts to discuss less well understood aspects of geospatial software, such as interfaces to GDAL, and components like the "vsizip" API.
+We would like to pay the experts for their time, and also offer to pay them to assist us in implementing certain features.
 
 -   Consulting, 36 hours totaling \$3600
 
@@ -48,8 +50,9 @@ For a total of: \$15,912
 
 ## Summary
 
+```{=html}
 <!--
 A summary of the requirements that contextualises the costs
 -->
-
+```
 These costs are a one-time investment to pay for initial development of the `geotargets` package totaling \$15,912.
