@@ -3109,35 +3109,6 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="signatories" class="level1">
-<h1>Signatories</h1>
-<!-- 
-This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
-
-An optional section would be for R-Core signatories where changes to R are proposed.
--->
-<section id="project-team" class="level2">
-<h2 class="anchored" data-anchor-id="project-team">Project team</h2>
-<!-- 
-Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
--->
-<p>Nicholas Tierney will serve as primary author and maintainer of <code>geotargets</code> during its development. Eric Scott (University of Arizona) will be a main contributor of code. Both anticipate using <code>geotargets</code> in ongoing and upcoming projects and have strong motivation to contribute to it’s development.</p>
-</section>
-<section id="contributors" class="level2">
-<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
-<!-- 
-Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
--->
-<p>We already have contributions in the form of detailed reproducible examples in GitHub issues. In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing with reading and writing shapefiles, and choosing alternative filetypes for targets. Anthony North at Queensland Fire and Emergency Services has contributed code for using <code>geoarrow</code> as a backend for reading and writing targets. Dewey Dunnington at Voltron Data has also made suggestions on using <code>geoarrow</code>. Michael Sumner and Ben Raymond at Integrated Digital East Antarctica program, Australian Antarctic Division, have agreed to provide support and guidance in handling and managing geospatial data formats, in particular navigating GDAL.</p>
-</section>
-<section id="consulted" class="level2">
-<h2 class="anchored" data-anchor-id="consulted">Consulted</h2>
-<!-- 
-Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
--->
-<p>The idea for <code>geotargets</code> originated in a <a href="https://github.com/ropensci/targets/discussions/1248">discussion</a> posted to the discussion forum for <code>targets</code> where the author and maintainer of <code>targets</code> and other “Targetopia” packages showed strong support. Community contributions to <code>geotargets</code> via issues and comments on issues have been numerous despite the repository only having existed since the beginning of March 2024. Additionally, we plan to consult with geospatial experts throughout development to be sure we are addressing the most pressing issues and addressing them in ways that will fit with common geospatial analysis workflows in R.</p>
-</section>
-</section>
 <section id="the-problem" class="level1">
 <h1>The Problem</h1>
 <!-- 
@@ -3180,6 +3151,35 @@ Depending on project type the detail section should include:
 -->
 <p>In the <code>targets</code> package, analysis steps, or “targets”, are defined with the <code>tar_target()</code> function. Targetopia packages provide additional <code>tar_*()</code> functions that extend <code>targets</code> by providing target archetypes for specialized workflows. A new <code>tar_*()</code> function requires that you specify reading, writing, marshaling, and unmarshaling of these new formats. Briefly, reading and writing could be thought of as functions that read and write data, like <code>read.csv()</code> and <code>write.csv()</code>. Marshaling and unmarshaling are to do with handling the objects as serialised data—similar to read write. The main contribution of <code>geotargets</code> will be a series of alternative <code>tar_*()</code> functions that create targets with pre-defined formats that take care of the details of how these R objects are written out and read in by downstream targets. For example, to write a target that creates a raster using the <code>terra</code> package, one would use <code>geotargets::tar_terra_rast(name, command)</code>. <code>tar_terra_rast()</code> would provide a pre-defined format created with <code>targets::tar_format()</code> with functions for reading, writing, marshaling, and unmarshaling <code>terra</code> <code>SpatRaster</code> objects. In this case, marshaling/unmarshaling involves running <code>terra::wrap()</code> and <code>terra::unwrap()</code>, respectively, to make the R object “self-contained” rather than just containing a C++ pointer to the data. This is especially necessary for parallel computing with <code>targets</code> since <code>SpatRaster</code> objects don’t work outside of the R session they were created in without <code>wrap()</code>ing them first. Reading and writing the target, in this case, would be specified to happen via <code>terra::rast()</code> and <code>terra::writeRaster()</code>, respectively.</p>
 <p>As a minimum viable product, we hope to deliver an R package, hosted on GitHub, supporting raster and vector data objects from the <code>terra</code> and <code>sf</code> packages with custom target functions. Support for additional geospatial packages will be added based on feedback from the user community and through consultation with geospatial specialists. In initial development we will choose sensible defaults for what file types targets will be stored as (e.g. GeoTIFF for raster data). In the future we will develop a <code>filetype</code> argument for each <code>tar_*</code> function, since there are many options for how geospatial data can be stored on disk by these packages. For example, “netCDF”, “HEIF”, and “BMP”, and 161 other options listed in the <a href="https://gdal.org/drivers/raster/index.html">GDAL raster driver</a>. This will offer flexibility in light of trade-offs between file size, read/write speed, and dependency requirements similar to the existing options for how objects are stored by the <code>targets</code> package (i.e. default ‘.rds’ with options for faster/smaller file types).</p>
+</section>
+</section>
+<section id="signatories" class="level1">
+<h1>Signatories</h1>
+<!-- 
+This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
+
+An optional section would be for R-Core signatories where changes to R are proposed.
+-->
+<section id="project-team" class="level2">
+<h2 class="anchored" data-anchor-id="project-team">Project team</h2>
+<!-- 
+Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
+-->
+<p>Nicholas Tierney will serve as primary author and maintainer of <code>geotargets</code> during its development. Eric Scott will be a main contributor of code to <code>geotargets</code>. Both of us are familiar with the rOpenSci package review process and have published R packages on CRAN. We anticipate using <code>geotargets</code> in ongoing and upcoming projects and have strong motivation to contribute to it’s development.</p>
+</section>
+<section id="contributors" class="level2">
+<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
+<!-- 
+Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
+-->
+<p>We already have contributions in the form of detailed reproducible examples in GitHub issues. In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing with reading and writing shapefiles, and choosing alternative file types for targets. Anthony North at Queensland Fire and Emergency Services has contributed code for using <code>geoarrow</code> as a back-end for reading and writing targets. Dewey Dunnington at Voltron Data has also made suggestions on using <code>geoarrow</code>. Michael Sumner and Ben Raymond at Integrated Digital East Antarctica program, Australian Antarctic Division, have agreed to provide support and guidance in handling and managing geospatial data formats, in particular navigating GDAL.</p>
+</section>
+<section id="consulted" class="level2">
+<h2 class="anchored" data-anchor-id="consulted">Consulted</h2>
+<!-- 
+Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
+-->
+<p>The idea for <code>geotargets</code> originated in a <a href="https://github.com/ropensci/targets/discussions/1248">discussion</a> posted to the discussion forum for <code>targets</code> where the author and maintainer of <code>targets</code> and other “Targetopia” packages showed strong support. Community contributions to <code>geotargets</code> via issues and comments on issues have been numerous despite the repository only having existed since the beginning of March 2024. Additionally, we plan to consult with geospatial experts throughout development to be sure we are addressing the most pressing issues and addressing them in ways that will fit with common geospatial analysis workflows in R.</p>
 </section>
 </section>
 <section id="project-plan" class="level1">
@@ -3243,7 +3243,7 @@ An idea of what is required to make the project actually happen
 -->
 <section id="people" class="level2">
 <h2 class="anchored" data-anchor-id="people">People</h2>
-<p>Nicholas Tierney and Eric Scott will take the lead in developing code for this project. Both have experience developing R packages and working with <code>targets</code> as well as some experience with geospatial analysis in R. Both Nicholas and Eric are familiar with the rOpenSci package review process and have published R packages on CRAN. Additionally we plan to consult with geospatial experts who are more familiar with the “rough edges” related to doing geospatial analysis in R and with the <code>targets</code> package.</p>
+<p>Nicholas Tierney and Eric Scott will take the lead in developing code for this project. Both have experience developing R packages and working with <code>targets</code> as well as some experience with geospatial analysis in R. Additionally we plan to consult with geospatial experts who are more familiar with the “rough edges” related to doing geospatial analysis in R and with the <code>targets</code> package.</p>
 </section>
 <section id="processes" class="level2">
 <h2 class="anchored" data-anchor-id="processes">Processes</h2>
