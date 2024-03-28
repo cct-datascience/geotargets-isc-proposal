@@ -21,7 +21,8 @@ Who are the people responsible for actually delivering the project if the propos
 
 Nicholas Tierney will serve as primary author and maintainer of `geotargets` during its development.
 Eric Scott (University of Arizona) will be a main contributor of code.
-Both anticipating using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
+Both Nicholas and Eric have previous experience creating and maintaining R packages that have gone through rOpenSci review and are published on CRAN.
+Both anticipate using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
 
 ## Contributors
 
