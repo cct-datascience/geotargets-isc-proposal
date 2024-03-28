@@ -15,7 +15,6 @@ An idea of what is required to make the project actually happen
 
 Nicholas Tierney and Eric Scott will take the lead in developing code for this project.
 Both have experience developing R packages and working with `targets` as well as some experience with geospatial analysis in R.
-Both Nicholas and Eric are familiar with the rOpenSci package review process and have published R packages on CRAN.
 Additionally we plan to consult with geospatial experts who are more familiar with the "rough edges" related to doing geospatial analysis in R and with the `targets` package.
 
 ## Processes

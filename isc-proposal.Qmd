@@ -25,11 +25,11 @@ editor:
       canonical: true
 ---
 
-{{< include proposal/signatories.Qmd >}}
-
 {{< include proposal/problemdefinition.Qmd >}}
 
 {{< include proposal/proposal.Qmd >}}
+
+{{< include proposal/signatories.Qmd >}}
 
 {{< include proposal/timeline.Qmd >}}
 

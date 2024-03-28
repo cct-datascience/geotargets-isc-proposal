@@ -20,8 +20,9 @@ Who are the people responsible for actually delivering the project if the propos
 -->
 
 Nicholas Tierney will serve as primary author and maintainer of `geotargets` during its development.
-Eric Scott (University of Arizona) will be a main contributor of code.
-Both anticipate using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
+Eric Scott will be a main contributor of code to `geotargets`.
+Both of us are familiar with the rOpenSci package review process and have published R packages on CRAN.
+We anticipate using `geotargets` in ongoing and upcoming projects and have strong motivation to contribute to it's development.
 
 ## Contributors
 
@@ -30,8 +31,8 @@ Who are the people who have actively helped with this proposal but won't necessa
 -->
 
 We already have contributions in the form of detailed reproducible examples in GitHub issues.
-In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing with reading and writing shapefiles, and choosing alternative filetypes for targets.
-Anthony North at Queensland Fire and Emergency Services has contributed code for using `geoarrow` as a backend for reading and writing targets.
+In particular, Andrew Gene Brown at USDA-NRCS, has contributed code for dealing with reading and writing shapefiles, and choosing alternative file types for targets.
+Anthony North at Queensland Fire and Emergency Services has contributed code for using `geoarrow` as a back-end for reading and writing targets.
 Dewey Dunnington at Voltron Data has also made suggestions on using `geoarrow`.
 Michael Sumner and Ben Raymond at Integrated Digital East Antarctica program, Australian Antarctic Division, have agreed to provide support and guidance in handling and managing geospatial data formats, in particular navigating GDAL.
 
